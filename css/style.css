@@ -95,7 +95,7 @@ div.card{
 @media only screen and (min-width: 900px) {
     header{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
         
@@ -116,13 +116,10 @@ div.card{
     }
 
 /* 14 */
-    /* body> header:first-of-type(  ){
-        top:0
-        position:center;
-    } */
-
-
-  }
+    /* body > header:first-of-type{
+        position: sticky;
+        top:0; */
+    }
 
 /* 15 */
 @media (prefers-reduced-motion) {
@@ -139,13 +136,15 @@ div.card{
 
     body{
         font-family:Arial, Helvetica, sans-serif;
+        background-image: none;
+        background-color: #f1f1f1;
     }
 
     .nav_links{
         display: flex;
         flex-direction: row;
         align-items:center;
-        justify-content: space-around
+        justify-content: space-around;
     }
     
     .pricing{
@@ -155,6 +154,7 @@ div.card{
         align-items: flex-end;
         height: auto;
     }
+    
     .card{
         border: 2px solid #45ADDD;
         flex-basis: 325px;
